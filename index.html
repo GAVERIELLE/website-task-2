@@ -1,0 +1,152 @@
+<link rel="stylesheet" href="style.css" />
+
+<body>
+
+  <nav id="navbar">
+ 
+  <a href="index.html" class="logo">EventFootprints</a>
+  
+
+  
+  <ul class="nav-links">
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="login.html" class="btn-login">Login</a></li>
+
+  </ul>
+</nav>
+
+
+<section id="hero">
+  <div class="hero-text">
+    <h1>The Event Impact Dashboard</h1>
+    <p>Track and analyze your event's impact with powerful data visualization.</p>
+    <div class="hero-buttons">
+      <button class="btn-primary" onclick="window.location.href='login.html'">Get Started</button>
+       <button class="btn-secondary">Learn More</button>
+
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="dashboard.png.png" alt="Event Dashboard Illustration" />
+  </div>
+</section>
+
+
+  <section id="client-events">
+  <h2>Client Events</h2>
+  <div class="slider-container" style="position: relative; max-width: 1000px; margin: auto;">
+
+    
+    <button id="slide-left" aria-label="Scroll left"
+      style="position: absolute; left: -20px; top: 50%; transform: translateY(-50%); z-index: 10; background-color: #003845; color: white; border: none; font-size: 2rem; padding: 10px; cursor: pointer; border-radius: 50%;">
+      &#10094;
+    </button>
+
+    
+    <div class="slider" style="display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 20px; padding: 20px;">
+      <div class="slide" style="flex: 0 0 300px; border-radius: 12px; overflow: hidden;">
+        <img src="images/event1.jpg.png" alt="Event 1" style="width: 200%; height: auto;" />
+      </div>
+      <div class="slide" style="flex: 0 0 300px; border-radius: 12px; overflow: hidden;">
+        <img src="images/event2.jpg.png" alt="Event 2" style="width: 200%; height: auto;" />
+      </div>
+      <div class="slide" style="flex: 0 0 300px; border-radius: 12px; overflow: hidden;">
+        <img src="images/event3.jpg.png" alt="Event 3" style="width: 200%; height: auto;" />
+      </div>
+      <div class="slide" style="flex: 0 0 300px; border-radius: 12px; overflow: hidden;">
+        <img src="images/event4.jpg.png" alt="Event 4" style="width: 200%; height: auto;" />
+      </div>
+      <div class="slide" style="flex: 0 0 300px; border-radius: 12px; overflow: hidden;">
+        <img src="images/event5.jpg.png" alt="Event 5" style="width: 200%; height: auto;" />
+      </div>
+    </div>
+
+    
+    <button id="slide-right" aria-label="Scroll right"
+      style="position: absolute; right: -20px; top: 50%; transform: translateY(-50%); z-index: 10; background-color: #003845; color: white; border: none; font-size: 2rem; padding: 10px; cursor: pointer; border-radius: 50%;">
+      &#10095;
+    </button>
+  </div>
+</section>
+
+<div class="slider-dots">
+  <span class="dot active" data-slide="0"></span>
+  <span class="dot" data-slide="1"></span>
+  <span class="dot" data-slide="2"></span>
+</div>
+
+
+<section id="impact-stats">
+  <div class="stat-box">
+    <h3>120+</h3>
+    <p>Events Hosted</p>
+  </div>
+  <div class="stat-box">
+    <h3>45K+</h3>
+    <p>Attendees Reached</p>
+  </div>
+  <div class="stat-box">
+    <h3>98%</h3>
+    <p>Positive Feedback</p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-cards">
+    <div class="testimonial">
+      <p>"This platform helped us measure event success like never before."</p>
+      <h4>- Event Organizer A</h4>
+    </div>
+    <div class="testimonial">
+      <p>"We gained deep insights into our audience with ease."</p>
+      <h4>- Marketing Lead B</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Highly recommended for organizations running large events."</p>
+      <h4>- Conference Host C</h4>
+    </div>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+
+<section id="stats-testimonials" style="padding: 60px 20px; background-color: #f0f7f7; text-align: center;">
+  <h2 style="color: #003845; margin-bottom: 40px;">Why Our Clients Love EventFootprints</h2>
+  
+  <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; max-width: 900px; margin: auto;">
+    
+    <!-- Stat 1 -->
+    <div style="flex: 1 1 200px; background: white; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <h3 style="color: #0a9396; font-size: 2.5rem; margin-bottom: 10px;">95%</h3>
+      <p style="font-weight: 600; color: #004d4d;">Client Satisfaction Rate</p>
+    </div>
+
+    <!-- Stat 2 -->
+    <div style="flex: 1 1 200px; background: white; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <h3 style="color: #0a9396; font-size: 2.5rem; margin-bottom: 10px;">500+</h3>
+      <p style="font-weight: 600; color: #004d4d;">Events Tracked</p>
+    </div>
+
+    <!-- Testimonial -->
+    <div style="flex: 1 1 300px; background: white; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <p style="font-style: italic; margin-bottom: 20px;">"EventFootprints transformed how we understand our events' impact. The data insights are invaluable."</p>
+      <strong style="color: #003845;">— Jane Doe, Event Manager</strong>
+    </div>
+
+  </div>
+</section>
+
+</body>
+
+<footer style="background-color: #003845; color: white; padding: 40px 20px; text-align: center;">
+  <p>Contact us: <a href="mailto:contact@eventfootprints.com" style="color: #94d2bd; text-decoration: none;">contact@eventfootprints.com</a> | Phone: +1 (555) 123-4567</p>
+  <div style="margin-top: 20px;">
+    <a href="#" style="color: white; margin: 0 10px; font-size: 1.5rem; text-decoration: none;">&#x1F426;</a> <!-- Twitter icon -->
+    <a href="#" style="color: white; margin: 0 10px; font-size: 1.5rem; text-decoration: none;">&#x1F4F7;</a> <!-- Instagram icon -->
+    <a href="#" style="color: white; margin: 0 10px; font-size: 1.5rem; text-decoration: none;">&#x1F465;</a> <!-- LinkedIn icon -->
+  </div>
+  <p style="margin-top: 20px; font-size: 0.9rem;">&copy; 2025 EventFootprints. All rights reserved.</p>
+</footer>
